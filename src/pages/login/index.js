@@ -1,22 +1,32 @@
 import React from "react"
-import '/home/streloc84/Рабочий стол/notes/src/App.css';
+import logged from "../../App"
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 class Login extends React.Component {
-    render(){
-    return(
-    <div className="App">
-      <header className="App-header">
-               <a href="./list"><h1>Логин</h1></a>
-      </header>
-      <body>
+  Handleclick(e) {
+    logged=!logged
+    e.preventDefault();
+    console.log('По ссылке кликнули.');
+  }
 
-      </body>
-      <footer>
-
-      </footer>
-    </div>
-    )
+  render() {
+    if(logged===true){
+      return <Redirect to="/list" />;
     }
+    return (
+      <div className="App">
+        <header className="App-header">
+          <a href="./list" onClick={this.Handleclick}><h1>Логин</h1></a>
+        </header>
+        <body>
+
+        </body>
+        <footer>
+
+        </footer>
+      </div>
+    )
+  }
 }
 
 export default Login;

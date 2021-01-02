@@ -9,7 +9,7 @@ import Login from './pages/login';
 import List from "./pages/list"
 import newNote from "./pages/newNote"
 
-
+let logged=false
 
 class App extends React.Component {
   render() {

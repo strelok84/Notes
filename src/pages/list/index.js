@@ -1,5 +1,5 @@
 import React from "react"
-import '/home/streloc84/Рабочий стол/notes/src/App.css';
+import '../../App.css';
 
 class List extends React.Component {
     render(){

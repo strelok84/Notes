@@ -1,7 +1,9 @@
 import React from "react"
-import '/home/streloc84/Рабочий стол/notes/src/App.css';
+import '../../App.css';
 
 class newNote extends React.Component {
+  
+
     render(){
     return(
     <div className="App">
