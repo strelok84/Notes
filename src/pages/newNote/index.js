@@ -1,12 +1,12 @@
 import React from "react"
 import '/home/streloc84/Рабочий стол/notes/src/App.css';
 
-class Login extends React.Component {
+class newNote extends React.Component {
     render(){
     return(
     <div className="App">
       <header className="App-header">
-               <a href="./list"><h1>Логин</h1></a>
+               <h1>Создайте заметку</h1>
       </header>
       <body>
 
@@ -19,4 +19,4 @@ class Login extends React.Component {
     }
 }
 
-export default Login;
+export default newNote;
